@@ -13,7 +13,8 @@ El proyecto consta de **dos componentes**:
 
 ## 🐼 Autor
 
-CyberRedPanda / Hacker-Cabrónico
+CyberRedPanda / Hacker-Cabrónico.
+
 Proyecto para concienciación, pentesting defensivo y formación.
 
 ---
@@ -21,8 +22,11 @@ Proyecto para concienciación, pentesting defensivo y formación.
 ## 📁 Estructura del proyecto
 
 000-wifi_crawler/
+
 ├── 000-wifi_crawler.ps1 # Script principal de auditoría, se descarga del repositorio automaticamente por BadUSB
+
 ├── 000-wifi_crawler.txt # Script BadUSB instalado en un dispositvo (Flipper Zero)
+
 └── README.md # Este archivo
 
 ---
@@ -60,6 +64,7 @@ $MaskChars = 3              # Cantidad de caracteres enmascarados, minimo 1
 $ShowRecommendations = $true
 $Mode = "DEMO"              # DEMO | AUDITORIA
 $ExportPath = "$env:TEMP\wifi_security_metrics.csv"
+```
 
 ### Modos
 - DEMO: solo muestra resultados en pantalla
