@@ -1,6 +1,6 @@
 # =========================================
 # WiFi Security Audit - DEMO / AUDITORIA
-# Read-Only | Metrics Only | Ethical
+# CyberRedPanda | Metrics Only | Ethical
 # Ultima actualización, 7 de Enero 2026
 # =========================================
 
@@ -16,10 +16,11 @@ $totalScore = 0
 $count = 0
 $worst = @{ SSID=""; Score=10 }
 
-# ===== PERFILES =====
+# ===== PERFILES (multi-idioma + únicos) =====
 $profiles = netsh wlan show profile |
-    Select-String "Perfil de todos los usuarios" |
-    ForEach-Object { $_.ToString().Split(":")[1].Trim() }
+    Select-String "All User Profile|Perfil de todos los usuarios" |
+    ForEach-Object { ($_ -split ":\s*", 2)[1].Trim() } |
+    Sort-Object -Unique
 
 # ===== CABECERA =====
 Write-Host "====================================" -ForegroundColor Cyan
@@ -30,11 +31,16 @@ Write-Host "====================================" -ForegroundColor Cyan
 foreach ($ssid in $profiles) {
 
     $raw = netsh wlan show profile name="$ssid" key=clear
-    $line = $raw | Select-String "Contenido de la clave"
+    $line = $raw | Select-String "Contenido de la clave|Key Content"
 
     if ($line) {
 
-        $pwd = $line.ToString().Split(":")[1].Trim()
+        # --- PARSING ROBUSTO DE CLAVE ---
+        $pwd = ($line -replace '.*?:\s*', '').Trim()
+
+        if ([string]::IsNullOrWhiteSpace($pwd)) {
+            $pwd = ""
+        }
 
         # --- ENMASCARADO ---
         if ($pwd.Length -gt $MaskChars) {
@@ -89,7 +95,7 @@ foreach ($ssid in $profiles) {
         $count++
 
         if ($score -lt $worst.Score) {
-            $worst.SSID = $ssid
+            $worst.SSID  = $ssid
             $worst.Score = $score
         }
 
