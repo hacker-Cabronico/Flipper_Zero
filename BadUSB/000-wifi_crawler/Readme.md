@@ -1,7 +1,6 @@
 # 000 Wifi Crawler
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue?logo=powershell)
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-lightgrey?logo=windows)
-![Security](https://img.shields.io/badge/Security-BitLocker-important?logo=microsoft)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
@@ -10,7 +9,7 @@
 
 CyberRedPanda / Hacker-Cabrónico.
 
-Proyecto para concienciación, pentesting defensivo y formación.
+### Proyecto para concienciación, pentesting defensivo y formación.
 ---
 
 ## 📌 Descripción
@@ -110,4 +109,5 @@ Ejecutar únicamente:
 - En entornos de laboratorio
 
 - Con autorización explícita
+
 
