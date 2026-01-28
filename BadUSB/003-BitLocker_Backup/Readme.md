@@ -5,6 +5,16 @@
 ![Security](https://img.shields.io/badge/Security-BitLocker-important?logo=microsoft)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
+---
+
+## 🐼 Autor
+
+CyberRedPanda / Hacker-Cabrónico.
+
+Proyecto para concienciación, pentesting defensivo y formación.
+
+---
+
 ## 📌 Descripción
 
 Este script en PowerShell permite exportar las claves de recuperación de BitLocker de todas las unidades cifradas del equipo.El usuario puede elegir entre dos formatos de salida:
@@ -44,17 +54,28 @@ El script generará un archivo en el Escritorio con el nombre:
 ## 📂 Ejemplo de salida
 
 BITLOCKER RECOVERY KEYS EXPORT
+
 Fecha: 28/01/2026 11:53:00
+
 Equipo: MI-PC
+
 Usuario: Erick
+
 Formato: TEXTO PLANO
-=================================================
+
+--
+
 
 Unidad: C:
+
 Estado cifrado: FullyEncrypted
+
 Protección: On
+
 Recovery Key ID: {12345678-ABCD-1234-ABCD-1234567890AB}
+
 Recovery Password:
+
 123456-789012-345678-901234-567890-123456-789012-345678
 
 -------------------------------------------------
@@ -78,3 +99,4 @@ Ejecutar únicamente:
 - En equipos propios
 - En entornos de laboratorio
 - Con autorización explícita
+
