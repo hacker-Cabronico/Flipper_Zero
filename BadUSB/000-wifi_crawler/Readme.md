@@ -88,7 +88,7 @@ El archivo 000-wifi_crawler.txt está diseñado para:
 
 ---
 
-##🛡️ Consideraciones de seguridad
+## 🛡️ Consideraciones de seguridad
 
 Algunos antivirus pueden marcar el script por:
 -> Uso de netsh
@@ -100,7 +100,7 @@ No hay persistencia, exfiltración ni modificación del sistema.
 
 ---
 
-##⚠️ Disclaimer legal
+## ⚠️ Disclaimer legal
 
 Este proyecto es educativo y defensivo.
 El autor no se hace responsable del uso indebido.
@@ -110,3 +110,4 @@ Ejecutar únicamente:
 - En entornos de laboratorio
 
 - Con autorización explícita
+
