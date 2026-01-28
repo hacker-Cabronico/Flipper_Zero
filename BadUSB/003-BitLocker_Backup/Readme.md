@@ -11,7 +11,7 @@
 
 CyberRedPanda / Hacker-Cabrónico.
 
-Proyecto para concienciación, pentesting defensivo y formación.
+> Proyecto para concienciación, pentesting defensivo y formación.
 
 ---
 
@@ -59,7 +59,7 @@ Fecha: 28/01/2026 11:53:00
 
 Equipo: MI-PC
 
-Usuario: Erick
+Usuario: Red Panda
 
 Formato: TEXTO PLANO
 
@@ -90,7 +90,7 @@ Recovery Password:
 - Este script se distribuye bajo la licencia MIT.
 - Úselo bajo su propia responsabilidad.
 
-##⚠️ Disclaimer legal
+## ⚠️ Disclaimer legal
 
 Este proyecto es educativo y defensivo.
 El autor no se hace responsable del uso indebido.
@@ -99,4 +99,5 @@ Ejecutar únicamente:
 - En equipos propios
 - En entornos de laboratorio
 - Con autorización explícita
+
 
