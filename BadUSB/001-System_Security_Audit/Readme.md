@@ -50,8 +50,8 @@ El script realiza una auditoría completa en las siguientes áreas:
 - Guest Account → Estado de la cuenta invitado
 - Windows Update → Configuración de actualizaciones automáticas
 - PS Execution Policy → Nivel de restricción de ejecución de scripts
-
-Unquoted Service Paths → Detecta servicios vulnerables a LPE
+- Unquoted Service Paths → Detecta servicios vulnerables a LPE
+  
 ✔ Compatible con **Windows 10 y 11**  
 ✔ Soporta **idiomas inglés y español**  
 ✔ No modifica configuración del sistema  
@@ -105,4 +105,5 @@ El autor no se hace responsable del uso indebido.
 Ejecutar únicamente:
 - En equipos propios
 - En entornos de laboratorio
+
 - Con autorización explícita
