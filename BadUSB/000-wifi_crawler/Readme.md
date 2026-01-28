@@ -1,13 +1,8 @@
-# WiFi Security Audit – Flipper Zero & PowerShell
-
-Auditoría **local y de solo lectura** de perfiles WiFi almacenados en Windows, orientada a **concienciación de seguridad**, uso educativo y auditorías defensivas.
-
-El proyecto consta de **dos componentes**:
-
-1. Un script **PowerShell (`000-wifi_crawler.ps1`)** que analiza la fortaleza de claves WiFi guardadas.
-2. Un script **BadUSB (`000-wifi_crawler.txt`)** para Flipper Zero que descarga, ejecuta y limpia el script de forma automática.
-
-> ⚠️ **Uso ético únicamente**. Ejecutar solo en equipos propios o con autorización explícita.
+# 000 Wifi Crawler
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue?logo=powershell)
+![Windows](https://img.shields.io/badge/Windows-10%2F11-lightgrey?logo=windows)
+![Security](https://img.shields.io/badge/Security-BitLocker-important?logo=microsoft)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
@@ -16,6 +11,17 @@ El proyecto consta de **dos componentes**:
 CyberRedPanda / Hacker-Cabrónico.
 
 Proyecto para concienciación, pentesting defensivo y formación.
+---
+
+## 📌 Descripción
+Auditoría **local y de solo lectura** de perfiles WiFi almacenados en Windows, orientada a **concienciación de seguridad**, uso educativo y auditorías defensivas.
+
+El proyecto consta de **dos componentes**:
+
+1. Un script **PowerShell (`000-wifi_crawler.ps1`)** que analiza la fortaleza de claves WiFi guardadas.
+2. Un script **BadUSB (`000-wifi_crawler.txt`)** para Flipper Zero que descarga, ejecuta y limpia el script de forma automática.
+
+> ⚠️ **Uso ético únicamente**. Ejecutar solo en equipos propios o con autorización explícita.
 
 ---
 
@@ -102,4 +108,5 @@ El autor no se hace responsable del uso indebido.
 Ejecutar únicamente:
 - En equipos propios
 - En entornos de laboratorio
+
 - Con autorización explícita
